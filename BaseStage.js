@@ -7,6 +7,8 @@ class BaseStage extends Phaser.Scene {
     createStage(title) {
 
         this.isTakingDamage = false;
+        
+      this.player = this.physics.add.sprite(90, 300, "player");
 
         this.cameras.main.startFollow(this.player);
 

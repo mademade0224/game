@@ -1,6 +1,4 @@
 // Boot Scene for one-time setup that don't need assets
-
-console.log("boot create");
 class Boot extends Phaser.Scene
 {
     constructor ()
@@ -16,6 +14,7 @@ class Boot extends Phaser.Scene
 
     create ()
     {
+        console.log("boot create");
         this.sound.pauseOnBlur = false;
 
         this.scene.start('Preloader');

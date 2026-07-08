@@ -8,7 +8,9 @@ class BaseStage extends Phaser.Scene {
 
         this.isTakingDamage = false;
         
-      this.player = this.physics.add.sprite(90, 300, "player");
+        this.player = this.physics.add.sprite(90,300,"player");
+        this.player.setDragX(200);
+
 
         this.cameras.main.startFollow(this.player);
 
@@ -21,9 +23,6 @@ class BaseStage extends Phaser.Scene {
         }).setOrigin(0.5);
 
         this.cursors = this.input.keyboard.createCursorKeys();
-
-        this.player = this.physics.add.sprite(90,300,"player");
-        this.player.setDragX(200);
 
         this.ground = this.physics.add.staticGroup();
         this.spikes = this.physics.add.staticGroup();

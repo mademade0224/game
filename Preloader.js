@@ -31,6 +31,7 @@ class Preloader extends Phaser.Scene
 
     create ()
     {
+        console.log("boot create");
         /* phaser:assets:setup:start */
         /* phaser:assets:setup:end */
 

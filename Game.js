@@ -49,8 +49,8 @@ class Game extends BaseStage{
         }
 
         this.playerMove();
-
     }
+}
 const config = {
     type: Phaser.AUTO,
     width: 1024,
@@ -71,4 +71,3 @@ const config = {
 
 const game = new Phaser.Game(config);
 
-}

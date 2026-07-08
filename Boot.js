@@ -1,5 +1,6 @@
 // Boot Scene for one-time setup that don't need assets
 
+console.log("boot create");
 class Boot extends Phaser.Scene
 {
     constructor ()

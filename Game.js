@@ -5,7 +5,7 @@ class Game extends BaseStage{
     }
 
     create(){
-
+        console.log('loadsuccsses')
         this.createStage("STAGE1");
 
 

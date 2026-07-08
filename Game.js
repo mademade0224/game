@@ -51,6 +51,24 @@ class Game extends BaseStage{
         this.playerMove();
 
     }
-    const game = new Phaser.Game(config);
+const config = {
+    type: Phaser.AUTO,
+    width: 1024,
+    height: 768,
+    parent: "game-container",
+    backgroundColor: "#000000",
+    scale: {
+        mode: Phaser.Scale.FIT
+    },
+    scene: [Boot, Preloader, MainMenu, Game, Stage2, GameOver],
+    physics: {
+        default: "arcade",
+        arcade: {
+            gravity: { y: 1000 }
+        }
+    }
+};
+
+const game = new Phaser.Game(config);
 
 }

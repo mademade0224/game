@@ -72,10 +72,12 @@ class Game extends Phaser.Scene
 
     takeDamage() 
     {
+        
         if (this.isTakingDamage) return;
         this.isTakingDamage = true;
         
         this.hp--;
+        this.registry.set("hp", this.hp);
         if (this.hp > 0) {
             this.hearts[this.hp].setVisible(false);
             this.player.setPosition(90, 300);

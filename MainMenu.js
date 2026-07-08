@@ -7,6 +7,7 @@ class MainMenu extends Phaser.Scene
 
     create ()
     {
+        console.log("MainMenu create");
         const cx = this.scale.width / 2;
         const cy = this.scale.height / 2;
 

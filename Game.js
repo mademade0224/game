@@ -51,5 +51,6 @@ class Game extends BaseStage{
         this.playerMove();
 
     }
+    const game = new Phaser.Game(config);
 
 }

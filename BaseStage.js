@@ -8,6 +8,8 @@ class BaseStage extends Phaser.Scene {
 
         this.isTakingDamage = false;
 
+        this.cameras.main.startFollow(this.player);
+
         const cx = this.scale.width / 2;
         const cy = this.scale.height / 2;
 

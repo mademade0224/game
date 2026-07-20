@@ -42,8 +42,8 @@ class BaseStage extends Phaser.Scene {
         for(let i=0;i<3;i++){
 
             const heart=this.add.image(40+i*40,40,"heart")
+                .setScale(1.4)
                 .setScrollFactor(0);
-                    this.hearts.setScale(1.4);
 
             if(i>=this.hp){
                 heart.setVisible(false);

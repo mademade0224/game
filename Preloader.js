@@ -26,6 +26,7 @@ class Preloader extends Phaser.Scene
     preload ()
     {
         this.load.image("goal","image/goal.png")
+        this.load.image("goal","image/ground.png")
     }
 
     create ()

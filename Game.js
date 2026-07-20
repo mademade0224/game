@@ -68,6 +68,7 @@ const config = {
         arcade: {
             gravity: { y: 1000 }
         }
+        
     }
 };
 

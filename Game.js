@@ -38,7 +38,7 @@ class Game extends BaseStage{
             ()=>{
                 this.scene.start("Stage2");
 
-                console.log('good')
+                console.log('good');
             }
         );
 

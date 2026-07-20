@@ -30,7 +30,8 @@ class Game extends BaseStage{
 
 this.goal = this.physics.add.staticGroup().create(2700, 680, "goal");
         this.goal.setScale(0.3);
-        this.goal.body.setSize(20, 35);
+this.goal.body.setSize(50, 60);
+this.goal.body.setOffset(13, 8);
 
         this.physics.add.collider(this.goal,this.ground);
         
@@ -41,7 +42,6 @@ this.goal = this.physics.add.staticGroup().create(2700, 680, "goal");
             ()=>{
                 this.scene.start("Stage2");
 
-                console.log('good');
             }
         );
 

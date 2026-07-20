@@ -28,7 +28,7 @@ class Game extends BaseStage{
         }
 
 
-        this.goal=this.physics.add.sprite(2700,715,"goal");
+        this.goal=this.physics.add.sprite(110,715,"goal");
 
         this.physics.add.collider(this.goal,this.ground);
 
